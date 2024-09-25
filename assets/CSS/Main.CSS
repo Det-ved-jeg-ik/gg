@@ -53,7 +53,7 @@ body {
     font-family: "Josefin Sans", sans-serif;
     font-weight: 500;
     padding: .5rem 0 0 1rem;
-    transition: 300ms ease;
+    transition: 200ms ease-in-out;
 }
 
 #BUGSLogo h1:hover {
@@ -89,14 +89,15 @@ body {
     border: none;
     font-size: 1.5rem;
     padding: .2rem 0 .2rem 2.6rem;
-    width: 108%;
+    width: 80%;
     margin-top: .8rem;
     text-transform: capitalize;
     background-color: transparent;
+    
 }
 
 #src-Input.active input {
-    width: 171%;
+    width: 162%;
 }
 
 #src-Input input:focus {
@@ -151,20 +152,21 @@ body {
 /* #endregion custom clear search button */
 
 /* #region Basket */
-#basket {
-    z-index: 1000;
+#basket{
+    z-index: 9999;
 
 }
 
-#basket img {
-    width: 100%;
-    height: 100%;
-    transition: 300ms ease;
+#basket img{
+    padding: 0 .5rem .5rem 0;    
+    transition: 200ms ease-in-out;
 }
 
-#basket img:hover {
+#basket:hover img{
     box-shadow: 3px 3px 0 rgba(0, 0, 0, 0.3);
+
 }
+
 
 /* #endregion Basket */
 
@@ -267,6 +269,13 @@ body {
     margin: 0 0 0 auto;
     padding: 2rem;
     background-color: var(--Lighter-grey);
+    transition: 200ms ease-in-out;
+    cursor: pointer;
+}
+
+.featuredProductImage:hover{
+    box-shadow: 3px 3px 0 rgba(0, 0, 0, 0.3);
+
 }
 
 .featuredProductImage img {

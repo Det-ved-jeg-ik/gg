@@ -45,11 +45,13 @@ document.querySelector('.addToCart').addEventListener('click', function () {
 
     checkmark.style.opacity = '1'; // Vis checkmark
     checkmarkContainer.style.backgroundColor = '#333333';
+    checkmarkContainer.style.pointerEvents = 'none';
 
 
     setTimeout(() => {
         checkmark.style.opacity = '0'; // Gem checkmark
         checkmarkContainer.style.backgroundColor = 'black';
+        checkmarkContainer.style.pointerEvents = 'all';
     }, 1500);
 });
 
