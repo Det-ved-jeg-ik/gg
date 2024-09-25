@@ -320,10 +320,10 @@ body {
 }
 
 .betingelser ul li div{
-    display: flex;
-    border: 2px solid red;
-    
+    display: flex;    
 }
+
+
 
 
 /* #endregion FOOTER */
