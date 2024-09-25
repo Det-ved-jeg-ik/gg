@@ -37,3 +37,27 @@ searchInput.addEventListener('blur', () => {
 });
 
 //#endregion Custom Clear Button for Search
+
+//#region Add To Cart
+document.querySelector('.addToCart').addEventListener('click', function () {
+    const checkmark = document.querySelector('.checkmark');
+    const checkmarkContainer = document.querySelector('.addToCartContainer');
+
+    checkmark.style.opacity = '1'; // Vis checkmark
+    checkmarkContainer.style.backgroundColor = '#333333';
+
+
+    setTimeout(() => {
+        checkmark.style.opacity = '0'; // Gem checkmark
+        checkmarkContainer.style.backgroundColor = 'black';
+    }, 1500);
+});
+
+
+
+
+
+
+//#endregion Add To Cart
+
+

@@ -12,6 +12,8 @@
 
 body {
     margin: 0;
+    overflow-x: hidden;
+
 }
 
 /* #region HEADER */
@@ -66,7 +68,7 @@ body {
 
 #overlayContainer {
     position: relative;
-    width: 360px;
+    width: 240px;
     overflow-x: hidden;
     transition: all 300ms ease;
 }
@@ -142,7 +144,7 @@ body {
 }
 
 #clear-btn:hover {
-    transform: rotate(360deg);
+    transform: rotate(90deg);
     /* Use transform for rotation */
 }
 
@@ -251,6 +253,94 @@ body {
 
 /* #endregion HEADER */
 
+/* #region MAIN */
+.featuredProductContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    margin: 5rem auto;
+}
+
+
+
+.featuredProductImage {
+    margin: 0 0 0 auto;
+    padding: 2rem;
+    background-color: var(--Lighter-grey);
+}
+
+.featuredProductImage img {
+    width: 100%;
+
+}
+
+
+.featuredProductDetails {
+    margin: 0 auto 0 0;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+#featuredProductBrand {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 3rem;
+    font-weight: 600;
+    margin: 0 0 .5rem 0;
+}
+
+#featuredProductName {
+    font-size: 1.6rem;
+    margin: 0 0 .5rem 0;
+    width: 370px;
+}
+
+#featuredProductPrice {
+    font-size: 2rem;
+    margin: 2rem 0 .5rem .5rem;
+    width: 200px;
+}
+
+.addToCartContainer {
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    width: fit-content;
+    transition: 200ms ease-in-out;
+
+    display: flex;
+    position: relative;
+}
+
+.addToCart {
+    background-color: transparent;
+    border: none;
+    color: var(--White);
+    font-size: 1.5rem;
+    padding: .7rem 7.5rem .7rem 1rem;
+    cursor: pointer;
+    transition: 200ms ease-in-out;
+}
+
+.addToCartContainer:hover {
+    background-color: #222;
+    box-shadow: 3px 3px 0 rgba(0, 0, 0, 0.3);
+    border-radius: 5px 5px 0 5px;
+}
+
+.checkmark {
+    position: absolute;
+    right: 1rem;              
+    top: 50%;                  
+    transform: translateY(-50%); 
+    width: 10%;
+    opacity: 0;                
+    transition: opacity 200ms ease; 
+
+    pointer-events: none;
+}
+
+/* #endregion MAIN */
 
 
 
@@ -282,31 +372,31 @@ body {
 }
 
 .footerCenter {
-    margin: 0 auto;    
+    margin: 0 auto;
 }
 
-.footerCenter img{
+.footerCenter img {
     margin: 0 auto;
     width: 100%;
     scale: .6;
 }
 
-.betingelser{
+.betingelser {
     position: relative;
 }
 
-.betingelser ul{
+.betingelser ul {
     margin: auto 0 0 0;
     display: flex;
     list-style: none;
     padding: 0;
 }
 
-.betingelser ul li{
+.betingelser ul li {
     margin: .25rem 0 0 0;
 }
 
-.betingelser ul li div a{
+.betingelser ul li div a {
     color: var(--Black);
     font-family: Arial, Helvetica, sans-serif;
     text-decoration: none;
@@ -319,8 +409,8 @@ body {
     margin: -5rem .5rem;
 }
 
-.betingelser ul li div{
-    display: flex;    
+.betingelser ul li div {
+    display: flex;
 }
 
 
